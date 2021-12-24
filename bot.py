@@ -78,4 +78,4 @@ async def readd(ctx):
 
 
 
-bot.run(token)
+bot.run(OTE2NzUzNjgxNzI5MzQ3NjQ0.YauvZg.clqUJotgbA0KIfa1n-Ky-3zgRbM)
