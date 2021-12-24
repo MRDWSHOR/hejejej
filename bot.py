@@ -44,32 +44,31 @@ async def checklist(ctx):
 async def delete(ctx):
     if ctx.message.author.id == admin_id:
         with open("roles.json", "r") as f:
-            dic = json.loads(f.read())
+      json.loads(f.read())
             for n in dic:
                 try:
                     for roles in dic[n]:
                         await bot.remove_roles(discord.utils.get(ctx.message.server.members, id=n), discord.utils.get(ctx.message.server.roles, id=roles))
-                        print("removed role from user " + n)
+                t("removed role from user " + n)
                 except Exception as error:
                     with open("logs.txt", "a") as f:
                         f.write(str(error) + "\n\n")
-        await bot.say("Done. Removed all roles.")
-    else:
-        await bot.say("You are not an admin of this server.")
-
+        aw.sae. Removed all roles.")
+   
+        await bot.say("You are not an admin of this server
 @bot.command(pass_context=True)
 async def readd(ctx):
     if ctx.message.author.id == admin_id:
-        with open("roles.json", "r") as f:
-            dic = json.loads(f.read())
-            for n in dic:
+       ("roles.json", "r") as f:
+            dicon.loads(f.read())
+            for n in
                 try:
                     for roles in dic[n]:
                         await bot.add_roles(discord.utils.get(ctx.message.server.members, id=n), discord.utils.get(ctx.message.server.roles, id=roles))
-                except Exception as error:
+                except En as error:
                     with open("logs.txt", "a") as f:
-                        f.write(str(error) + "\n\n")
-                    print(error)
+                   te(str(error) + "\
+                   ror)
         await bot.say("Done. I've added everyone's roles back. Shutting myself down.")
         await bot.close()
     else:
@@ -78,4 +77,4 @@ async def readd(ctx):
 
 
 
-bot.run(OTE2NzUzNjgxNzI5MzQ3NjQ0.YauvZg.clqUJotgbA0KIfa1n-Ky-3zgRbM)
+bot.run(OTE2NzUzNjgxNzI5MzQ3NjQ0.YauvZg.clqUJy-3zgRbM)
